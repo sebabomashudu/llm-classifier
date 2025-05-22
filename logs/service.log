@@ -1,0 +1,9 @@
+2025-05-22 23:25:56,240 - root - ERROR - Classification failed: 'system'
+2025-05-22 23:26:08,972 - root - ERROR - Classification failed: 'system'
+2025-05-22 23:30:11,826 - root - ERROR - Classification failed: Configuration 'sentiments' not found
+2025-05-22 23:30:39,474 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 23:37:38,006 - root - ERROR - Classification failed: Configuration 'mashudu' not found
+2025-05-22 23:44:47,700 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 23:45:10,947 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 23:45:34,632 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 23:53:12,882 - root - INFO - Health check - Service is healthy (no requests handled yet)

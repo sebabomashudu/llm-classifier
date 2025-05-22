@@ -1,0 +1,30 @@
+classifier:
+  default_model: "gpt-3.5-turbo"
+  temperature: 0.7
+  max_tokens: 50
+  timeout: 30.0
+  active_config: "sentiment"  # or "categories"
+  
+rate_limits:
+  requests_per_minute: 60
+  burst_capacity: 10 
+  
+logging:
+  level: "INFO"
+  file: "logs/service.log"
+
+configurations:
+  sentiment:
+    prompt_file: "prompts/sentiment.yaml"
+    classes:
+      - "negative"
+      - "positive"
+  
+  categories:
+    prompt_file: "prompts/categories.yaml"
+    classes:
+      - "Electronics"
+      - "Home & Kitchen"
+      - "Clothing"
+      - "Books"
+      - "Sports"
