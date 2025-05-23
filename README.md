@@ -28,6 +28,8 @@ https://github.com/sebabomashudu/llm-classifier.git
    cp .env.example .env  # Add your OpenAI key
 4. Run service
    Access docs: http://localhost:8000/docs
+   ```bash
+   python -m uvicorn app.main:app --reload
 
 ### API Reference <a name="api-reference"></a>
 1. **POST /classify:**
