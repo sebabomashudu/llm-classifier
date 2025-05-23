@@ -5,17 +5,6 @@
 ![OpenAI](https://img.shields.io/badge/OpenAI-1.12.0-orange)
 ![License](https://img.shields.io/badge/license-MIT-purple)
 
-## Table of Contents
-- [Features](#features)
-- [Quick Start](#quick-start)  
-- [API Reference](#api-reference)
-- [Configuration](#configuration)
-- [Deployment](#deployment)  
-- [Development](#development)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features <a name="features"></a>
 ✔ **Multi-classification** through single API endpoint  
 ✔ **Production-ready** with rate limiting and health checks  
@@ -46,14 +35,20 @@ https://github.com/sebabomashudu/llm-classifier.git
 
 2. **GET /health:**
    ![image](https://github.com/user-attachments/assets/c68cb337-ca06-469f-a644-ffc47cfee2e3)
+   
+### Loogging
+Logs are written to logs/service.log with rotation:
+Max size: 10MB
+Keep 5 backup files
+
+1. Sample log entry:
+   ```bash
+   2025-05-23 00:42:57,863 - root - INFO - Health check - Service is healthy (no requests handled yet)
 
 ### Running Tests
-1. Sentiment test:
+1. Unit and Integration Test:
    ```bash
-   cp .env.example .env  # Add your OpenAI key
-2. Categories test:
-   ```bash
-   cp .env.example .env  # Add your OpenAI key  
+   py -m pytest -v tests/  # Verbose mode
 
 ### CI/CD Pipeline 🚀
 
