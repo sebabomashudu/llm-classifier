@@ -52,10 +52,10 @@ Keep 5 backup files
 
 ### CI/CD Pipeline 🚀
 
-The repository includes a **.github/workflows/backend.yml** and **.github/workflows/react-frontend.yml** files that configures a GitHub Actions workflow to:
-1. Run backend and frontend tests
-2. Build both projects
-3. Create deployment artifacts
+The repository includes a **.github/workflows/python-publish.yml**
+1. Install dependancies
+2. Run tests
+
 
 
 
