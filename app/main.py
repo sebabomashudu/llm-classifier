@@ -51,6 +51,25 @@ async def startup():
 @app.post("/classify")
 @limiter.limit("60/minute")
 async def classify(request: Request, text: str, config_name: str = None):
+     # Input validation
+    if not text.strip():
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": "Invalid input",
+                "message": "Text cannot be empty"
+            }
+        )
+    
+    if not config_name:
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": "Missing configuration",
+                "message": "config_name parameter is required",
+                "available_configs": config.get_available_configs()
+            }
+        )
     start = time.time()
     try:
         prompt_config = config.get_prompt_config(config_name)
