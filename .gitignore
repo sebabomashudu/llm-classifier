@@ -1,3 +1,8 @@
 .env
 /.vs/llm-classifier/FileContentIndex/3e4b395f-170c-4d0f-9a6f-9cb81fec3a39.vsidx
 /.vs/llm-classifier/FileContentIndex
+/app/__pycache__/main.cpython-312.pyc
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/tests/__pycache__/test_products.cpython-312-pytest-8.3.5.pyc
+/tests/__pycache__/test_sentiment.cpython-312-pytest-8.3.5.pyc
