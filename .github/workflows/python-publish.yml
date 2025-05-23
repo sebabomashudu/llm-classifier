@@ -20,9 +20,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          # If you have dev requirements (like pytest), install them too:
-          if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
+          # Make sure pytest is installed even if not in requirements.txt
+          pip install pytest
 
       - name: Run tests
         run: |
-          pytest  # or `python -m unittest discover` if you're using unittest
+          pytest
