@@ -6,3 +6,4 @@
 /.vs/slnx.sqlite
 /tests/__pycache__/test_products.cpython-312-pytest-8.3.5.pyc
 /tests/__pycache__/test_sentiment.cpython-312-pytest-8.3.5.pyc
+/.vs/llm-classifier/v17
