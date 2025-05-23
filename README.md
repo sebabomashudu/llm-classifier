@@ -27,7 +27,7 @@ https://github.com/sebabomashudu/llm-classifier.git
    ```bash
    cp .env.example .env  # Add your OpenAI key
 4. Run service
-   Access docs: http://localhost:8000/docs
+   Access docs: http://localhost:8000/docs & http://127.0.0.1:8000/redoc
    ```bash
    python -m uvicorn app.main:app --reload
 
@@ -38,7 +38,7 @@ https://github.com/sebabomashudu/llm-classifier.git
 2. **GET /health:**
    ![image](https://github.com/user-attachments/assets/c68cb337-ca06-469f-a644-ffc47cfee2e3)
    
-### Loogging
+### Logging
 Logs are written to logs/service.log with rotation:
 Max size: 10MB
 Keep 5 backup files
